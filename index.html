@@ -24,6 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#exempleModalSignIn">Sign in</a></li>
                 <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#exempleModal">Pricing</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Above us</a></li>
             </ul>
@@ -36,8 +37,8 @@
     </div>
 
 <!-- Слайдер -->
-
-    <div class="container-fluid p-0"> <!-- p-0 является самодельным классом -->>
+    
+    <div class="container-fluid p-0"> <!-- p-0 является самодельным классом -->
         <div id="carouselExampleIndicator" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li class="active" data-target="#carouselExampleIndicator" data-slide-to="0"></li>
@@ -112,7 +113,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis delectus numquam dicta ullam velit mollitia cumque deleniti impedit dolore amet sint nisi iusto placeat nam, recusandae, accusantium corrupti suscipit blanditiis voluptatibus perferendis vero esse doloribus, natus ab? Dolore, repudiandae quod vitae mollitia impedit rerum ducimus non iusto blanditiis quo tempora atque cupiditate velit amet minima alias aspernatur rem. Odit optio dolores cupiditate libero nam possimus voluptate suscipit totam, repellendus mollitia fugiat. Odio repudiandae sit voluptate labore adipisci libero ab doloremque! Sapiente molestias quaerat adipisci ex? Non aut voluptatum quasi natus! Placeat, perferendis in, doloremque natus omnis exercitationem reiciendis cumque rem, soluta quis incidunt odit modi. Dolore doloribus, debitis tempore ipsam voluptas nihil saepe magnam nulla, mollitia magni quo dolorem, dolores maiores suscipit cum. Voluptates, doloribus id vel dignissimos corporis nobis nam debitis voluptas illum, maiores quisquam, eveniet ipsam pariatur fugit esse quaerat animi. Perferendis error natus in ipsa voluptates architecto voluptas tenetur ipsam. Aliquam facere id alias magnam rerum, est omnis dolore ex magni fuga dolor pariatur numquam culpa earum. Molestias magnam aspernatur quam sunt molestiae odit aliquid velit error ipsa maxime. Suscipit neque nam ipsa optio fugit natus ex accusantium, excepturi nisi quam temporibus. Quo ipsa unde facilis magni.</p>    
+                    <p>Lorem </p>    
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -121,6 +122,53 @@
             </div>
         </div>
     </div>
+
+<!-- Форма авторизации или регистрации -->
+    <div class="modal fade" id="exempleModalSignIn" tabindex="-1" role="dialog" aria-labelledby="exempleModalSignIn" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exemplemodalLabel">Autorization</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail">Email address</label>
+                                <input type="email" class="form-control form-control-lg" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="email">
+                                <small id="exempleHelp" class="form-text text-muted">Enter your email</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputUser">User name</label>
+                                <input type="email" class="form-control form-control-sm" id="exampleInputUser" aria-describedby="emailHelp" placeholder="user name">
+                                <small id="exempleHelp" class="form-text text-muted">Enter your User name</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPass">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputPass" placeholder="password">
+                                <small id="exemplePass" class="form-text text-muted">Password must have 10 simbols</small>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                    Remamber me  
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
 
 
 
